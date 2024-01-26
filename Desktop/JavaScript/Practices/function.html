@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fucntion Practice</title>
+  </head>
+  <body>
+    <script>
+      function oddEven(number) {
+        if (number % 2 == 0) {
+          console.log("Number is even");
+        } else {
+          console.log("Number is odd");
+        }
+      }
+
+      function larger(number1, number2) {
+        if (number1 > number2) {
+          return number1;
+        } else if (number1 < number2) {
+          return number2;
+        } else {
+          return "Both numbers are equal";
+        }
+      }
+
+      function converter(celsius) {
+        let fahrenheit = celsius * 1.8 + 32;
+        return fahrenheit;
+      }
+
+      oddEven(4);
+
+      let largerOutput;
+      console.log(largerOutput = larger(33.6,33.5));
+
+      let converterOutput;
+      console.log(converterOutput = converter(32));
+    </script>
+  </body>
+</html>

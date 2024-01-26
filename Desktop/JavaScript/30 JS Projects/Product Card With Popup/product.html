@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Product Card</title>
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <div class="gallery">
+          <img src="image1.png" id="productImg" />
+          <div class="controls">
+            <span class="btn active"></span>
+            <span class="btn"></span>
+            <span class="btn"></span>
+          </div>
+        </div>
+        <div class="details">
+          <h1 id="casual">Casual T Shirt</h1>
+          <h2 id="price">$29.99</h2>
+          <h3 id="discount">15% OFF</h3>
+          <p>
+            A casual T-shirt that is comfortable, stylish, and versatile.
+            Perfect for any occasion.
+          </p>
+          <form id="buyForm">
+            <div class="size-select">
+              <p>Size</p>
+              <label for="small">
+                <input type="radio" name="size" id="small" /><span>S</span>
+              </label>
+              <label for="medium">
+                <input type="radio" name="size" id="medium" /><span>M</span>
+              </label>
+              <label for="large">
+                <input type="radio" name="size" id="large" /><span>L</span>
+              </label>
+              <label for="x-large">
+                <input type="radio" name="size" id="x-large" /><span>XL</span>
+              </label>
+              <label for="xx-large">
+                <input type="radio" name="size" id="xx-large" /><span>XXL</span>
+              </label>
+            </div>
+            <div class="color-select">
+              <p>Color</p>
+              <label for="red">
+                <input type="radio" name="color" id="red" class="" /><span
+                  class="color-1 color-btn"
+                ></span>
+              </label>
+              <label for="green">
+                <input type="radio" name="color" id="green" class="" /><span
+                  class="color-2 color-btn"
+                ></span>
+              </label>
+              <label for="blue">
+                <input type="radio" name="color" id="blue" class="" /><span
+                  class="color-3 color-btn"
+                ></span>
+              </label>
+              <label for="pink">
+                <input type="radio" name="color" id="pink" class="" /><span
+                  class="color-4 color-btn"
+                ></span>
+              </label>
+            </div>
+
+            <div class="quantity-select">
+              <p>Quantity</p>
+              <input type="number" value="1" min="1"/>
+            </div>
+            <div class="price-discount">
+              <p>Final Price</p>
+              <span class="price-discount finalPrice">$00.00</span>
+            </div>
+
+            <button type="button" id="buy" class="popup-btn" onclick="openPopup()">Buy Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup-container">
+      <!-- <button type="submit" class="popup-btn" onclick="openPopup()">Submit</button> -->
+      <div class="popup" id="popup">
+        <img src="check.png">
+        <h1>Thank you!</h1>
+        <p>Your products will be delivered to you soon!</p>
+        <p>Product Tracking Number: REF-0021375</p>
+        <p>For any complaints contact Customer Care</p>
+        <button type="submit" class="popup-btn" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+    <script src="product.js"></script>
+    <script src="popup_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Practice</title>
+</head>
+<body>
+  <script>
+
+    let product = {
+      name: 'iPhone',
+      model: '15 Pro Max',
+      price: 10000,
+      description: 'iPhone 11 Pro Max',
+      'delivery-time': 'Same day delivery',
+    };
+
+    let copyProduct = product;
+    console.log(product);
+    copyProduct.price = 15000;
+    console.log(product);
+
+    console.log(product['delivery-time']);
+
+    let obj = {
+      message: 'Good Job',
+      status: 'Complete',
+    }
+    console.log(obj);
+    let {message, status} = obj;
+    console.log(message);
+    console.log(status);
+
+    function isIdenticalProduct(product1, product2){
+      if (product1 == product2){
+        return true; 
+      }
+      if (typeof product1 !== 'object' || typeof product2 !== 'object')
+      {
+        console.warn("Parameter passed is not an object");
+        return false;
+      }
+      if (product1.name === product2.name &&
+      product1.model === product2.model &&
+      product1.description === product2.description &&
+      product1.name === product2.name)
+      {
+        return true;
+      } else{
+        return false;
+      }
+    }
+    let product2 = {
+      name: 'iPhone',
+      model: '14 Pro Max',
+      price: 10000,
+      description: 'iPhone 11 Pro Max',
+      'delivery-time': 'Same day delivery',
+    };
+
+    console.log(isIdenticalProduct(product, product2));
+    console.log(isIdenticalProduct(product, ''));
+    console.log(isIdenticalProduct(product2, product2));
+
+  </script>
+</body>
+</html>

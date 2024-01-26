@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <h1>Image-<span>Gallery</span></h1>
+  <div class="gallery-wrap">
+    <img src="back.png" id="back-btn">
+    <div class="gallery">
+      <div>
+        <span><img src="image1.webp"></span>
+        <span><img src="image2.webp"></span>
+        <span><img src="image3.webp"></span>
+      </div>
+      <div>
+        <span><img src="image4.webp"></span>
+        <span><img src="image5.webp"></span>
+        <span><img src="image6.webp"></span>
+      </div>
+    </div>
+    <img src="front.png" id="next-btn">
+  </div>
+
+  <!-- <div class="gallery-wrap">
+    <img src="back.png" id="back-btn">
+    <div class="gallery">
+      <div>
+        <span><img src="image1.webp"></span>
+        <span><img src="image2.webp"></span>
+        <span><img src="image3.webp"></span>
+      </div>
+      <div>
+        <span><img src="image4.webp"></span>
+        <span><img src="image5.webp"></span>
+        <span><img src="image6.webp"></span>
+      </div>
+    </div>
+    <img src="front.png" id="next-btn">
+  </div>
+
+  <div class="gallery-wrap">
+    <img src="back.png" id="back-btn">
+    <div class="gallery">
+      <div>
+        <span><img src="image1.webp"></span>
+        <span><img src="image2.webp"></span>
+        <span><img src="image3.webp"></span>
+      </div>
+      <div>
+        <span><img src="image4.webp"></span>
+        <span><img src="image5.webp"></span>
+        <span><img src="image6.webp"></span>
+      </div>
+    </div>
+    <img src="front.png" id="next-btn">
+  </div>
+
+  <div class="gallery-wrap">
+    <img src="back.png" id="back-btn">
+    <div class="gallery">
+      <div>
+        <span><img src="image1.webp"></span>
+        <span><img src="image2.webp"></span>
+        <span><img src="image3.webp"></span>
+      </div>
+      <div>
+        <span><img src="image4.webp"></span>
+        <span><img src="image5.webp"></span>
+        <span><img src="image6.webp"></span>
+      </div>
+    </div>
+    <img src="front.png" id="next-btn">
+  </div>
+
+  <div class="gallery-wrap">
+    <img src="back.png" id="back-btn">
+    <div class="gallery">
+      <div>
+        <span><img src="image1.webp"></span>
+        <span><img src="image2.webp"></span>
+        <span><img src="image3.webp"></span>
+      </div>
+      <div>
+        <span><img src="image4.webp"></span>
+        <span><img src="image5.webp"></span>
+        <span><img src="image6.webp"></span>
+      </div>
+    </div>
+    <img src="front.png" id="next-btn">
+  </div> -->
+  <script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("back-btn");
+    let nextBtn = document.getElementById("next-btn");
+
+    // scrollContainer.addEventListener("wheel", (evt) => {
+    //   // evt.preventDefault();
+    //   scrollContainer.scrollLeft += evt.deltaY;
+    //   scrollContainer.style.scrollBehaviour = "auto";
+
+    nextBtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += 900;
+    })
+
+    backBtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft -= 900;
+    })
+  </script>
+</body>
+</html>

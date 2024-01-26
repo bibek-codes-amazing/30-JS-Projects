@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <h1 id="main-heading">To-Do List</h1><br>
+    <h3 id="sub-heading">"Build To-Do on the GO!"</h3>
+    <br><br>
+    <div class="grid-container">
+      <input id="todo-input" type="text" placeholder="Enter To-Do here" required />
+
+      <input id="todo-date" type="date" required />
+
+      <button class="btn-todo" onclick="addTodo()">Add</button>
+
+      <button class="btn-todo" onclick="resetTodoList()">Reset</button>
+    </div>
+
+    <div class="todo-container grid-container"></div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

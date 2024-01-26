@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eventListener</title>
+</head>
+<body>
+  <button id="button1">Click to see magic!</button>
+  <button id="button2">Wanna Click Again?</button>
+
+
+  <script>
+    let buttonElement1 = document.querySelector('#button1');
+    let behaviour1 = event => console.log('As you clicked! Click Off!');
+    buttonElement1.addEventListener('click', behaviour1);
+
+    let buttonElement2 = document.querySelector('#button2');
+    let behaviour2 = event => console.log('Very Ambitious');
+    buttonElement2.addEventListener('click', behaviour2);
+  </script>
+</body>
+</html>

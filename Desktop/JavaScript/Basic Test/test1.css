@@ -1,0 +1,15 @@
+h1{
+  font-size: 30px;
+  color: red;
+}
+button{
+  background-color: lightblue;
+  color: black;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: brown;
+}
